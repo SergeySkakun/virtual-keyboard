@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  width: 785px;
+  margin: 0 auto;
+}
+
+.textarea {
+  width: 100%;
+}
+
+.keyboard {
+  width: 100%;
+  display: grid;
+  grid-template-rows: repeat(5, 50px);
+  grid-row-gap: 5px;
+}
+
+.keyboard__line {
+  display: grid;
+  column-gap: 5px;
+}
+
+.keyboard__line_1st {
+  grid-template-columns: repeat(13, 50px) 70px;
+}
+
+.keyboard__line_2st {
+  grid-template-columns: 70px repeat(13, 50px);
+}
+
+.keyboard__line_3st {
+  grid-template-columns: 87.5px repeat(11, 50px) 87.5px;
+}
+
+.keyboard__line_4st {
+  grid-template-columns: 115px repeat(10, 50px) 115px;
+}
+
+.keyboard__line_5st {
+  grid-template-columns: 60px repeat(3, 50px) 280px repeat(2, 50px) 160px;
+}
+
+.keyboard__arrows {
+  display: grid;
+  grid-template-rows: repeat(2, 24px);
+  align-content: space-between;
+}
+
+.keyboard__line_arrows-1 {
+  grid-template-columns: 50px;
+  justify-content: center;
+}
+
+.keyboard__line_arrows-2 {
+  grid-template-columns: repeat(3, 50px);
+}
+
+.keyboard__key {
+  border-radius: 5px;
+  background-color: rgb(44, 44, 44);
+}
